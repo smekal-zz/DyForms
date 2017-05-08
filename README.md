@@ -1,7 +1,7 @@
 # DyForms
 
 ## Setup
-
+Install Node v6.9.0
 Run `npm install` for installing required node modules
 
 
