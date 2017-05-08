@@ -35,8 +35,8 @@ module.exports = {
             },
             {
                 test: /\.css$/,
-                use: ['css-to-string-loader', 'css-loader']
-                //use: ExtractTextPlugin.extract({ fallbackLoader: 'style-loader', loader: 'css-loader?sourceMap' })
+                //use: ['css-to-string-loader', 'css-loader']
+                use: ExtractTextPlugin.extract({ fallbackLoader: 'style-loader', loader: 'css-loader?sourceMap' })
             },
             {
                 test: /\.less$/,
