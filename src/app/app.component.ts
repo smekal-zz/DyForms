@@ -15,7 +15,15 @@ import { QuestionService } from './question.service';
 export class AppComponent {
   questions: any[];
 
-  constructor(service: QuestionService) {
+
+  constructor(private service: QuestionService) {
     this.questions = service.getQuestions();
+
+    // service.getQuestions1().subscribe((data) => {
+    //   console.log('data from service call', data);
+    //   this.questions = data;
+
+    // });
   }
+
 }
